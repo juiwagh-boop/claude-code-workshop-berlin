@@ -1,71 +1,101 @@
 # Claude Code Workshop — Berlin
 
-Welcome! In the next 2 hours you'll build and deploy your own website using Claude Code.
+Build and deploy your own website in 2 hours using Claude Code. No prior coding experience needed.
+
+---
 
 ## What you'll build
 
-Pick one of these starter templates:
+Choose one starter template:
 
-- **`templates/portfolio/`** — personal portfolio (about, projects, contact)
-- **`templates/landing/`** — small-business landing page (hero, services, contact)
+| Template | Description |
+|---|---|
+| `templates/portfolio/` | Personal portfolio with an about section, projects, and contact info |
+| `templates/landing/` | Small-business landing page with a hero, services, and contact section |
 
-By the end of the workshop, your site will be live on the internet at a Vercel URL you can share.
+By the end of the workshop, your site will be live on the internet at a Vercel URL you can share with anyone.
+
+---
 
 ## Before the workshop
 
-You should have received a setup email with the account checklist (GitHub, Claude, Vercel). If you missed it, ping the organizer.
+Make sure you have accounts set up for:
 
-## Getting started (during the workshop)
+- **GitHub** — to store your code
+- **Claude** — to power Claude Code
+- **Vercel** — to deploy your site
 
-1. **Fork this repo** to your own GitHub account (top-right "Fork" button).
-2. **Open in Codespaces**: on your fork, click the green "Code" button → "Codespaces" tab → "Create codespace on main". Wait ~60 seconds for the environment to boot.
-3. **Pick your template** in the Codespace terminal:
-   ```bash
-   cd templates/portfolio   # or: cd templates/landing
-   npm install
-   npm run dev
-   ```
-4. Click the "Open in Browser" popup that appears (port 3000) — that's your live preview.
-5. **Open Claude Code** in a second terminal:
-   ```bash
-   claude
-   ```
-6. Start chatting. Try: *"Change the headline to say 'Hi, I'm [your name]'"*
+You should have received a setup email with the checklist. If you missed it, ping the organizer.
+
+---
+
+## Getting started
+
+### 1. Fork this repo
+
+Click the **Fork** button (top-right on GitHub) to copy this repo to your own account.
+
+### 2. Open in Codespaces
+
+On your fork, click the green **Code** button → **Codespaces** tab → **Create codespace on main**. Wait about 60 seconds for the environment to load.
+
+### 3. Pick your template
+
+In the Codespace terminal, run:
+
+```bash
+cd templates/portfolio   # or: cd templates/landing
+npm install
+npm run dev
+```
+
+Click the **"Open in Browser"** popup that appears — that's your live preview on port 3000. Every change you make will appear there instantly.
+
+### 4. Open Claude Code
+
+In a second terminal, run:
+
+```bash
+claude
+```
+
+Then start chatting. A good first prompt to try:
+
+> *"Change the headline to say 'Hi, I'm [your name]'"*
+
+---
 
 ## Deploying to Vercel
 
-Two ways, both quick:
+### Option 1 — Vercel CLI (recommended)
 
-### Via the Vercel CLI (recommended — no setup)
-
-From inside your template directory:
+Run this from inside your template directory:
 
 ```bash
-cd templates/portfolio   # or templates/landing
-vercel login             # one-time
+vercel login    # one-time setup
 vercel --prod
 ```
 
-A URL appears. Your site is live.
+A live URL will appear. That's your site.
 
-### Via the Vercel dashboard (GitHub integration)
+### Option 2 — Vercel dashboard (GitHub integration)
 
-If you connect your GitHub fork to Vercel, you'll need one extra setting:
+1. Go to [vercel.com/new](https://vercel.com/new) and import your fork
+2. Click **Edit** next to **Root Directory** and set it to `templates/portfolio` or `templates/landing`
+3. Vercel will auto-detect Next.js once the root directory is set
+4. Click **Deploy**
 
-1. [vercel.com/new](https://vercel.com/new) → import your fork
-2. **Root Directory** → click Edit → set to `templates/portfolio` (or `templates/landing`)
-3. Framework Preset auto-detects as Next.js once the Root Directory is set
-4. Click Deploy
+> **Why set the Root Directory?** Your site lives inside `templates/portfolio/` (or `templates/landing/`), not at the top level of the repo. Without this setting, Vercel won't know where to look and will return a 404 or "no Next.js version detected" error.
 
-> **Why the Root Directory step?** The website code lives inside `templates/portfolio/` (or `templates/landing/`), not at the repo root. Vercel needs to know where to look.
+If you hit that error after deploying, go to your project's **Settings → Build & Development Settings**, set the Root Directory, save, then click **Redeploy** from the Deployments tab.
 
-If you see a 404 or a "no Next.js version detected" error after deploy, the Root Directory probably wasn't set. Go to your project's **Settings → Build & Development Settings**, set it, save, then **Redeploy** from the Deployments tab.
+---
 
 ## Reference docs
 
-Whether during or after the workshop, these are the references to keep on hand:
-
-- [docs/01-terminal-basics.md](./docs/01-terminal-basics.md) — the dozen commands you actually need (`pwd`, `cd`, `mkdir`, etc.)
-- [docs/02-claude-commands.md](./docs/02-claude-commands.md) — every Claude Code slash command, keyboard shortcut, and launch mode
-- [docs/03-prompts.md](./docs/03-prompts.md) — a library of useful prompts, organized by what you're trying to do
-- [docs/04-next-steps.md](./docs/04-next-steps.md) — going further: custom slash commands, MCP servers, skills, extending your site
+| Doc | What's in it |
+|---|---|
+| [docs/01-terminal-basics.md](./docs/01-terminal-basics.md) | The dozen terminal commands you'll actually need (`pwd`, `cd`, `mkdir`, etc.) |
+| [docs/02-claude-commands.md](./docs/02-claude-commands.md) | Every Claude Code slash command, keyboard shortcut, and launch mode |
+| [docs/03-prompts.md](./docs/03-prompts.md) | A library of useful prompts, organized by what you're trying to do |
+| [docs/04-next-steps.md](./docs/04-next-steps.md) | Going further: custom slash commands, MCP servers, skills, and extending your site |

@@ -5,11 +5,11 @@
 // ────────────────────────────────────────────────────────────────
 
 export const hero = {
-  name: "Anna Schneider",
-  role: "Product Designer",
-  location: "Berlin, Germany",
+  name: "Jui Wagh",
+  role: "Design Student & UX Enthusiast",
+  location: "India · Berlin",
   headline:
-    "I help early-stage teams turn fuzzy ideas into shipping products. Currently designing checkout flows at a fintech startup.",
+    "I create meaningful, intuitive digital experiences that align with business goals. Currently working as a Student Designer at Proven Expert.",
   ctaPrimary: { label: "See my work", href: "#projects" },
   ctaSecondary: { label: "Get in touch", href: "#contact" },
 };
@@ -17,9 +17,9 @@ export const hero = {
 export const about = {
   heading: "About",
   paragraphs: [
-    "I'm a product designer with seven years of experience across fintech, e-commerce, and developer tools. I care about the unglamorous parts of design — error states, edge cases, and the slow trust-building between a product and its users.",
-    "Before design, I studied philosophy in Munich. It turns out a lot of design is just disciplined thinking about what people actually need versus what they say they want.",
-    "Outside work I climb (poorly), read (constantly), and run a small Sunday breakfast club in Neukölln.",
+    "I'm a design student and enthusiast with more than 2 years of experience creating meaningful, intuitive digital experiences that align with business goals. I combine user research and data analysis with accessibility and storytelling to turn insights into clear, effective interfaces.",
+    "My work spans SaaS and specialised products (including medical HMIs) as well as fashion, lifestyle, and finance. Skilled in Figma and Adobe Creative Suite, I blend innovation with practical solutions to solve design challenges and deliver results.",
+    "Born and raised in India, I bring a cross-cultural perspective to every project — and I'm happy to chat in English, Hindi, or German.",
   ],
 };
 
@@ -27,25 +27,11 @@ export const experience = {
   heading: "Experience",
   roles: [
     {
-      title: "Senior Product Designer",
-      company: "Tide",
+      title: "Working Student — Design",
+      company: "Proven Expert",
       period: "2023 — Present",
       summary:
-        "Leading checkout and onboarding redesign for the business banking app. Cut signup drop-off by 34% in the first quarter after launch.",
-    },
-    {
-      title: "Product Designer",
-      company: "GitLab",
-      period: "2020 — 2023",
-      summary:
-        "Owned the merge request review experience. Shipped inline code review, suggested changes UX, and the new diff renderer.",
-    },
-    {
-      title: "Designer",
-      company: "Freelance",
-      period: "2017 — 2020",
-      summary:
-        "Worked with 14 early-stage startups across Berlin and Tel Aviv on brand, web, and product design.",
+        "Designing intuitive digital experiences for a B2B SaaS platform. Applying user-centered thinking, attention to detail, and creative problem-solving to improve interfaces and deliver results.",
     },
   ],
 };
@@ -54,25 +40,25 @@ export const projects = {
   heading: "Selected work",
   items: [
     {
-      title: "Tide Checkout Redesign",
+      title: "SaaS Product Design",
       year: "2024",
       summary:
-        "Reframed the onboarding flow around clarity over speed. Three rounds of usability testing, six prototypes, one launch — 34% improvement in completion.",
-      link: { label: "Case study", href: "#" },
+        "Designing clear, effective interfaces for a SaaS platform — combining user research, data analysis, and accessibility to improve the end-to-end user experience.",
+      link: { label: "View on Behance", href: "https://behance.net" },
     },
     {
-      title: "GitLab Inline Code Review",
-      year: "2022",
-      summary:
-        "Designed the inline review pattern now used by 30+ million developers. Started as a hack-week prototype, became a flagship feature.",
-      link: { label: "Read the writeup", href: "#" },
-    },
-    {
-      title: "Berlin Coffee Map",
+      title: "Medical HMI Design",
       year: "2023",
       summary:
-        "A side project mapping independent coffee roasters in Berlin. Built with React + Mapbox. Used by ~2k people a week.",
-      link: { label: "View live", href: "#" },
+        "Designed specialised human-machine interfaces for medical products, balancing safety, clarity, and usability under real-world constraints.",
+      link: { label: "View on Behance", href: "https://behance.net" },
+    },
+    {
+      title: "Fashion & Lifestyle Branding",
+      year: "2023",
+      summary:
+        "Visual identity and digital design work for fashion and lifestyle brands — bringing storytelling and cross-cultural perspective to every project.",
+      link: { label: "View on Behance", href: "https://behance.net" },
     },
   ],
 };
@@ -82,50 +68,37 @@ export const skills = {
   groups: [
     {
       label: "Design",
-      items: ["Product strategy", "Interaction design", "Prototyping", "Usability testing", "Design systems"],
+      items: ["Creative Thinking", "User-Centered Design", "Attention to Detail", "Prototyping", "Usability Testing"],
     },
     {
       label: "Tools",
-      items: ["Figma", "Linear", "Notion", "Framer", "FigJam"],
+      items: ["Figma", "Adobe Creative Suite", "Canva"],
     },
     {
-      label: "Code",
-      items: ["HTML / CSS", "React (basics)", "Git"],
+      label: "Languages",
+      items: ["English", "Hindi", "German"],
     },
   ],
 };
 
 export const testimonials = {
   heading: "What people say",
-  quotes: [
-    {
-      text:
-        "Anna is rare. She holds the long-term product vision and the pixel-level craft in the same head, and shifts between them without losing either.",
-      author: "Lukas Weber",
-      role: "Head of Product, Tide",
-    },
-    {
-      text:
-        "Working with Anna recalibrated how our whole team thinks about review. She has an instinct for what's actually friction versus what just feels like friction.",
-      author: "Sara Patel",
-      role: "Engineering Manager, GitLab",
-    },
-  ],
+  quotes: [],
 };
 
 export const contact = {
   heading: "Get in touch",
   body:
-    "Open to product design roles, collaborations, and the occasional coffee. Berlin or remote.",
-  email: "anna@example.com",
+    "Open to design collaborations, internships, and interesting projects. Happy to chat in English, Hindi, or German.",
+  email: "pradhan.tejas135@gmail.com",
   socials: [
-    { label: "LinkedIn", href: "https://linkedin.com/in/yourname" },
-    { label: "Twitter / X", href: "https://twitter.com/yourname" },
-    { label: "Read.cv", href: "https://read.cv/yourname" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/jui-wagh" },
+    { label: "Behance", href: "https://behance.net/juiwagh" },
+    { label: "Instagram", href: "https://instagram.com/juiwagh" },
   ],
 };
 
 export const meta = {
-  title: "Anna Schneider — Product Designer",
-  description: "Berlin-based product designer. Currently at Tide.",
+  title: "Jui Wagh — Design Student & UX Enthusiast",
+  description: "Design student with 2+ years of experience in SaaS, medical, fashion, and finance. Skilled in Figma and Adobe Creative Suite.",
 };
